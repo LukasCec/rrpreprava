@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>RR Preprava s.r.o.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1200, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+	</head>
+
+	
+
+	<body class="is-preload">
+
+		<!-- Header -->
+		
+			<div id="header" class="fade-out-image">
+				<div id="section1" >
+					<span class="logo icon "></span>
+					<h1 class="grad fade-in-image">RR Preprava s.r.o.</h1>
+					<p style="margin-bottom: 20px;">Preprava osôb a majetku v rámci
+					<br />
+					územia Slovenskej republiky a EÚ</p>
+					<a id="btnn" href="#section2" >Dozvedieť sa viac ></a>
+				</div>
+			</div>
+		
+
+		<!-- Main -->
+			<div id="main" >
+				<span id="section2"></span>
+				<header  class="major container medium reveal">
+					<h2 >BEZPEČNÝ, SPOĽAHLIVÝ A
+					<br />
+					RÝCHLY TRANSPORT DODÁVKOU
+					
+					<br />
+					</h2>
+				</header>
+
+				<div class="box alt container">
+					<section class="feature left reveal">
+						<a class="image icon solid fa-info-circle"><img src="images/pic01.jpg" alt="" /></a>
+						<div class="content">
+							<h3 class="grad">O nás</h3>
+							<p>Organizujete veľkú rodinnú dovolenku, potrebujete dopraviť hostí na svadbu, oslavu alebo iné podujatie v rámci Slovenska či EÚ? V tom prípade neváhajte a obráťte sa na nás. </p>
+						</div>
+					</section>
+					<section class="feature right reveal">
+						<a class="image icon solid fa-car-side"><img src="images/pic02.jpg" alt="" /></a>
+						<div class="content">
+							<h3 class="grad">Naše vozidlá</h3>
+							<p>Disponujeme moderným automobilom značky Mercedes Vito s kapacitou až 9 osôb a automobilom Citroen Spacetourer s kapacitouďalších 8 osôb.</p>
+						</div>
+					</section>
+					<section class="feature left reveal">
+						<a  class="image icon solid fa-suitcase-rolling"><img src="images/pic03.jpg" alt="" /></a>
+						<div class="content">
+							<h3 class="grad">Služby</h3>
+							<p>
+								
+								<ul class="services--list">
+									<li>• Preprava osôb na výlety a dovolenky v rámci  Slovenska a zahraničia</li>
+									<li>• Preprava osôb za prácou do Rakúska alebo  Nemecka</li>
+									<li>• Preprava osôb na svadby, oslavy, hostiny či iné organizované podujatia</li>
+								</ul>
+							</p>
+						</div>
+					</section>
+				</div>
+
+				
+
+				<footer class="major container medium reveal">
+					<h3 style="font-weight: 900; font-size: 37px; margin-bottom: 20px;">Telefón</h3>
+					<a href="tel:+421 911 318 114" class="grad" style=" font-size: 48px; font-weight: 900;">+421 911 318 114</a>
+					<div class="call--icon"></div>
+				</footer>
+
+			</div>
+
+	
+			<div id="footer" class="reveal" >
+				<div class="container medium">
+
+					<header class="major last">
+						<h2>Kontaktujte nás</h2>
+					</header>
+
+
+					
+
+					<ul class="copyright">
+						<li>&copy; RR Preprava s.r.o. |  All rights reserved.</li>
+					</ul>
+
+				</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+
+
+			<script type="text/javascript">
+				window.addEventListener('scroll', reveal);
+		
+				function reveal() {
+					var reveals = document.querySelectorAll('.reveal');
+		
+					for (var i = 0; i < reveals.length; i++) {
+		
+						var windowheight = window.innerHeight;
+						var revealtop = reveals[i].getBoundingClientRect().top;
+						var revealpoint = 10;
+		
+						if (revealtop < windowheight - revealpoint) {
+							reveals[i].classList.add('active');
+						}
+						else {
+							reveals[i].classList.remove('active');
+						}
+					}
+				}
+		
+				var x = 2;
+				var togler = document.getElementsByClassName("nav-top")[0];
+				function Navcol() {
+					
+					document.getElementsByClassName("nav-top")[0].style.transitionDuration = "0.5s";
+		
+					if(x%2==0){
+						document.getElementsByClassName("nav-top")[0].style.height = "200px"
+					}
+					else if (x%2!=0){
+						document.getElementsByClassName("nav-top")[0].style.height = "100px"
+					}
+		
+					x = x+1;
+				}
+		
+			   
+		
+			</script>
+	</body>
+</html>
