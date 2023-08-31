@@ -97,6 +97,8 @@ video {
   vertical-align: baseline;
 }
 
+
+
 article,
 aside,
 details,
@@ -146,6 +148,7 @@ blockquote,
 q {
   quotes: none;
 }
+
 
 blockquote:before,
 blockquote:after,
@@ -371,6 +374,7 @@ blockquote {
   .container {
     width: 100% !important;
   }
+  
 }
 
 /* Row */
@@ -2380,6 +2384,7 @@ span.image.icon {
   text-decoration: none;
   border-bottom: none;
   position: relative;
+  
 }
 
 .icon:before {
@@ -2914,7 +2919,10 @@ input[type="button"].small,
   background-image: url(../../images/Vector.png);
   background-repeat: no-repeat;
   background-position: center;
+
 }
+
+
 #header .logo:hover{
 	transform: scale(1.1);
 	box-shadow: 0 0 20px #8d8d8d;
@@ -3144,6 +3152,15 @@ input[type="button"].small,
 @media screen and (max-width: 1280px) {
   /* Basic */
 
+  
+  #header .logo:not(:hover){
+    background-size: 60%;
+  }
+  #header .logo:hover{
+    background-size: 60%;
+  }
+
+
   body,
   input,
   select,
@@ -3240,7 +3257,15 @@ input[type="button"].small,
 /* Narrow */
 
 @media screen and (max-width: 980px) {
-  /* Basic */
+ 
+  
+  #header .logo:not(:hover){
+    background-size: 60%;
+  }
+  #header .logo:hover{
+    background-size: 60%;
+  }
+
 
   body,
   input,
@@ -3254,6 +3279,14 @@ input[type="button"].small,
 
 @media screen and (max-width: 840px) {
   /* Section/Article */
+  
+  #header .logo:not(:hover){
+    background-size: 60%;
+  }
+  #header .logo:hover{
+    background-size: 60%;
+  }
+
 
   header.major {
     padding-left: 2em;
@@ -3277,6 +3310,13 @@ input[type="button"].small,
 
   h3 {
     font-size: 1em;
+  }
+
+  #header .logo:not(:hover){
+    background-size: 60%;
+  }
+  #header .logo:hover{
+    background-size: 60%;
   }
 
   /* Section/Article */
@@ -3394,16 +3434,43 @@ input[type="button"].small,
     padding: 2em 0 2em 0;
   }
 }
-
+ 
 /* Mobile (Portrait) */
 
 @media screen and (max-width: 480px) {
-  /* Section/Article */
-
+ 
+  #header .logo:not(:hover){
+    background-size: 60%;
+  }
+  #header .logo:hover{
+    background-size: 60%;
+  }
   header.major {
     padding-left: 1em;
     padding-right: 1em;
+  }  
+  kontaktne--udaje
+
+  
+.kontaktne--udaje {
+  display: flex;
+  
+}
+
+.kontaktne--udaje > .coll {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .kontaktne--udaje > .coll {
+    flex-direction: column;
   }
+}
+
+
 
   footer.major {
     padding-left: 1em;
@@ -3488,7 +3555,7 @@ background: linear-gradient(to right, #4EB980 18%, #38A7CF 100%);
   .fade-in-image { 
 	opacity: 0;
 	animation: fadeIn 1s both;
-	animation-delay: 1s; }
+	animation-delay: 0.5s; }
   @keyframes fadeIn {
 	0% {
 		 opacity: 0;
@@ -3498,7 +3565,7 @@ background: linear-gradient(to right, #4EB980 18%, #38A7CF 100%);
   }
 
 
-  .fade-out-image { animation: fadeOut 1.5s both; }
+  .fade-out-image { animation: fadeOut 1s both; }
   @keyframes fadeOut {
 	0% { 
 		transform: translateY(-90px);
@@ -3564,3 +3631,5 @@ background: linear-gradient(to right, #4EB980 18%, #38A7CF 100%);
     transform: translateY(0px);
     opacity: 1;
   }
+
+  
